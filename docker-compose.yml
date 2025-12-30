@@ -1,9 +1,13 @@
+version: "3.3"
+
 services:
   issuer_oidc:
-    image: ghcr.io/eu-digital-identity-wallet/eudi-srv-issuer-oidc-py:latest
+    build:
+      context: .
+      dockerfile: Dockerfile    
     ports:
       - "6005:5000"
     volumes:
       - ./config.json:/config.json:ro
-      - /tmp/oidc_log_dev/:/tmp/oidc_log_dev/
+      - ../log-oidc/:/tmp/oidc_log_dev/
     restart: unless-stopped

@@ -28,15 +28,15 @@
       },
       "formatters":{
          "default":{
-            "format":"%(asctime)s %(name)s %(levelname)s %(message)s"
+            "at":"%(asctime)s %(name)s %(levelname)s %(message)s"
          }
       }
    },
    "port":5000,
-   "domain":"dev.issuer.eudiw.dev/oidc",
+   "domain":"oidc.issuer.pbest.me",
    "server_name":"{domain}",
-   "base_url":"https://dev.issuer.eudiw.dev/oidc",
-   "authorization_redirect_url":"https://dev.issuer.eudiw.dev/auth_choice",
+   "base_url":"https://oidc.issuer.pbest.me",
+   "authorization_redirect_url":"https://oidc.issuer.pbest.me/auth_choice",
    "op":{
       "server_info":{
          "add_ons":{
@@ -65,8 +65,8 @@
                      "PS512"
                   ],
                   "allowed_htu":[
-                     "https://dev.issuer.eudiw.dev/token",
-                     "https://dev.issuer.eudiw.dev/oidc/token"
+                     "https://oidc.issuer.pbest.me/token",
+                     "https://oidc.issuer.pbest.me/oidc/token"
                   ]
                }
             }
