@@ -65,8 +65,7 @@
                      "PS512"
                   ],
                   "allowed_htu":[
-                     "https://oidc.issuer.pbest.me/token",
-                     "https://oidc.issuer.pbest.me/oidc/token"
+                     "https://oidc.issuer.pbest.me/token"
                   ]
                }
             }
