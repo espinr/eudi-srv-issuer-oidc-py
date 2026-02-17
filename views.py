@@ -1053,7 +1053,8 @@ def prea_auth():
         session_id=username, pre_authorized_code=response_dict["code"]
     )
 
-    preauth_code_ref = str(uuid4())
+    #preauth_code_ref = str(uuid4())
+    preauth_code_ref = str(random.randint(100000, 999999))
 
     request_manager.update_pre_authorized_code_ref(
         session_id=username, pre_authorized_code_ref=preauth_code_ref
