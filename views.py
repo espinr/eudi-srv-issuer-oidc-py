@@ -990,7 +990,7 @@ def prea_auth():
             "unhandled_exception",
         )
 
-    tx_code = random.randint(10000, 99999)
+    tx_code = random.randint(1000, 9999)
 
     try:
         request_manager.add_request(
