@@ -990,7 +990,7 @@ def prea_auth():
             "unhandled_exception",
         )
 
-    tx_code = random.randint(1000, 9999)
+    tx_code = random.randint(10000, 99999)
 
     try:
         request_manager.add_request(
@@ -1054,7 +1054,7 @@ def prea_auth():
     )
 
     #preauth_code_ref = str(uuid4())
-    preauth_code_ref = str(random.randint(100000, 999999))
+    preauth_code_ref = str(random.randint(10000, 99999))
 
     request_manager.update_pre_authorized_code_ref(
         session_id=username, pre_authorized_code_ref=preauth_code_ref
