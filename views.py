@@ -1041,6 +1041,7 @@ def prea_auth():
         authn_method,
     )
 
+
     args = endpoint.authz_part2(request=authz_request, session_id=_session_id)
 
     if isinstance(args, ResponseMessage) and "error" in args:
